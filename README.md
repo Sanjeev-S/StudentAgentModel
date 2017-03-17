@@ -6,29 +6,29 @@
 Agent Model for university campus students
 
 
-Rough Idea of Class structure
+## Rough Idea of Class structure
 
-###4 Identities 
+### 4 Identities 
 (Identity could be an interface)
 Student 
 Friend
 Enemy 
 Youth
 
-###Abstract Social Practice
+### Abstract Social Practice
 Student : Study, Regular to Class
 Friend: Socialise, Establish friendship
 Enemy: Ignore, Irritate
 Youth: Enjoy
 
-###Context:
+### Context:
 In class
 In hostel
 In mess
 In library
 (Different context based on people with(or even alone))
 
-###Concrete Social Practice(Instance of Abstract Social Practice):
+### Concrete Social Practice(Instance of Abstract Social Practice):
 Student + In class - Listen in class
 Student + In class - Ignore conversation
 Friend + In class - Talk to friend
