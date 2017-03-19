@@ -82,24 +82,8 @@
 				<version>4.3.0</version>
 			</plugin>
 			<build>
-  <plugins>
-    <plugin>
-      <groupId>com.qulice</groupId>
-      <artifactId>qulice-maven-plugin</artifactId>
-      <version>0.17</version>
-      <configuration>
-        <license>file:${basedir}/LICENSE</license>
-      </configuration>
-      <executions>
-        <execution>
-          <goals>
-            <goal>check</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin>
-  </plugins>
-</build>
 		</plugins>
 	</build>
+</plugins>
+</build>
 </project>
