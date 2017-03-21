@@ -1,4 +1,4 @@
-package in.ac.bitsgoa.agentmodel.Identity;
+package in.ac.bitsgoa.agentmodel.identity;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;

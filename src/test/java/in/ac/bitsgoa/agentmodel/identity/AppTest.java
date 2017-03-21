@@ -1,4 +1,4 @@
-package in.ac.bitsgoa.agentmodel.Identity;
+package in.ac.bitsgoa.agentmodel.identity;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
