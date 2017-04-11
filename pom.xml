@@ -20,6 +20,7 @@
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -82,20 +83,30 @@
 				<version>4.3.0</version>
 			</plugin>
 			<plugin>
-      <groupId>com.qulice</groupId>
-      <artifactId>qulice-maven-plugin</artifactId>
-      <version>0.17</version>
-      <configuration>
-        <license>file:${basedir}/LICENSE.txt</license>
-      </configuration>
-      <executions>
-        <execution>
-          <goals>
-            <goal>check</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin>
+				<groupId>com.qulice</groupId>
+				<artifactId>qulice-maven-plugin</artifactId>
+				<version>0.17</version>
+				<configuration>
+					<license>file:${basedir}/LICENSE.txt</license>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
+	<reporting>
+    <plugins>
+      
+			<plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>3.0.4</version>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>

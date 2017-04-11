@@ -28,40 +28,10 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package in.ac.bitsgoa.agentmodel.identity;
 
 /**
- * This specifies the agent.
- * @author Sanjeev Suresh (f2013495@goa.bits-pilani.ac.in)
- * @author Prasad Talasila (tsrkp@goa.bits-pilani.ac.in)
+ * Defines  the contexts.
  * @version $Id$
- * @since 0.0.1
+ * @since 0.1
  */
-public class Student implements Identity {
-    /**
-     * Just a message.
-     */
-    private final String message;
-    /**
-     * Constructor.
-     * @param message Just a message to print.
-     */
-    public Student(final String message) {
-        this.message = message;
-    }
-    /**
-     * Prints the message.
-     * @return Returns the message.
-     */
-    public final String printMessage() {
-        System.out.println(this.message);
-        return this.message;
-    }
-    /**
-     * Sets the context.
-     */
-    public final void setContext() {
-        System.out.println("Not Implemented yet");
-        System.out.println(this.message);
-    }
-}
+package in.ac.bitsgoa.agentmodel.context;

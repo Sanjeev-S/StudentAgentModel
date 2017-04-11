@@ -28,40 +28,32 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package in.ac.bitsgoa.agentmodel.identity;
+
+import org.junit.Test;
+
+import in.ac.bitsgoa.agentmodel.context.InClass;
+import in.ac.bitsgoa.agentmodel.identity.Student;
+
+import org.junit.Assert;
 
 /**
- * This specifies the agent.
+ * This specifies the tests of the agent.
  * @author Sanjeev Suresh (f2013495@goa.bits-pilani.ac.in)
  * @author Prasad Talasila (tsrkp@goa.bits-pilani.ac.in)
  * @version $Id$
  * @since 0.0.1
  */
-public class Student implements Identity {
+public class AgentTest {
     /**
-     * Just a message.
+     * A student agent.
      */
-    private final String message;
+    private Agent agent = new Agent();
     /**
-     * Constructor.
-     * @param message Just a message to print.
+     * Just a test.
      */
-    public Student(final String message) {
-        this.message = message;
-    }
-    /**
-     * Prints the message.
-     * @return Returns the message.
-     */
-    public final String printMessage() {
-        System.out.println(this.message);
-        return this.message;
-    }
-    /**
-     * Sets the context.
-     */
-    public final void setContext() {
-        System.out.println("Not Implemented yet");
-        System.out.println(this.message);
+    @Test
+    public final void testSetSalientIdenity() {
+        InClass c;
+        Assert.assertTrue(this.agent.setSalientIdentity(c) instanceof Student);
     }
 }
